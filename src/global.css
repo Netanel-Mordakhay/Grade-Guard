@@ -9,3 +9,28 @@
     margin-top: 10vh;
   }
 }
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.titleDark {
+  color: #000;
+}
+
+.titleLight {
+  color: #4c9bc8;
+}
+
+.titleHat {
+  position: absolute;
+  left: -2px;
+  top: -14px;
+  width: 39px;
+  height: 48px;
+  background-image: url(images/hat.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
