@@ -24,15 +24,25 @@
       "feat3desc": "Share your assignments with friends, and make sure everyone is lending a hand",
       "feat4title": "Smart notifications feature",
       "feat4desc": "Don't worry, we'll email you a notification before any important deadline."
-    },
-    "signup": {
-      "signupMessage": "Create new account",
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "repeatPassword": "Repeat Password",
-      "acceptTermsOfService": "Accept Terms of Service",
-      "termsOfService": "Terms of Service",
-      "register": "Register"
+    }
+  },
+  "signup": {
+    "signupMessage": "Create a new account",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "repeatPassword": "Repeat Password",
+    "acceptTermsOfService": "Accept Terms of Service",
+    "termsOfService": "Terms of Service",
+    "register": "Register",
+    "stepper": {
+      "step1": "Step 1",
+      "step1desc": "Find out about GradeGuard",
+      "step2": "Step 2",
+      "step2desc": "Creating a new account",
+      "step3": "Step 3",
+      "step3desc": "Verify email address",
+      "step4": "Step 4",
+      "step4desc": "Better your grades!"
     }
   },
   "about": {

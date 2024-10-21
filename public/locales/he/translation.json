@@ -24,15 +24,25 @@
       "feat3desc": "מערכת חכמה שתאפשר לכם לנהל את מטלות הלימודים יחד עם החברים בתואר.",
       "feat4title": "התראות חכמות",
       "feat4desc": "אל תדאגו, נשלח לכם עדכונים בדיוק ברגע הנכון לפני כל תאריך חשוב."
-    },
-    "signup": {
-      "signupMessage": "יצירת משתמש חדש",
-      "firstName": "שם פרטי",
-      "lastName": "שם משפחה",
-      "repeatPassword": "חזור על הסיסמה",
-      "acceptTermsOfService": "מאשר תנאי שימוש",
-      "termsOfService": "תנאי שימוש",
-      "register": "הירשם"
+    }
+  },
+  "signup": {
+    "signupMessage": "יצירת משתמש חדש",
+    "firstName": "שם פרטי",
+    "lastName": "שם משפחה",
+    "repeatPassword": "חזור על הסיסמה",
+    "acceptTermsOfService": "מאשר תנאי שימוש",
+    "termsOfService": "תנאי שימוש",
+    "register": "הירשם",
+    "stepper": {
+      "step1": "שלב 1",
+      "step1desc": "לגלות את GradeGuard",
+      "step2": "שלב 2",
+      "step2desc": "יצירת משתמש חדש",
+      "step3": "שלב 3",
+      "step3desc": "אימות כתובת אימייל",
+      "step4": "שלב 4",
+      "step4desc": "מתחילים להשתמש!"
     }
   },
   "about": {
