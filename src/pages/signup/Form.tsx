@@ -22,7 +22,7 @@ const Form = () => {
       {/* Container header */}
       <Logo />
       <Title fw="200" mb={20}>
-        Create new account
+        {t("signup.signupMessage")}
       </Title>
 
       {/* Container body */}

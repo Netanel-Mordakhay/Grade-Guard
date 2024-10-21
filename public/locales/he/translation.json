@@ -24,6 +24,15 @@
       "feat3desc": "מערכת חכמה שתאפשר לכם לנהל את מטלות הלימודים יחד עם החברים בתואר.",
       "feat4title": "התראות חכמות",
       "feat4desc": "אל תדאגו, נשלח לכם עדכונים בדיוק ברגע הנכון לפני כל תאריך חשוב."
+    },
+    "signup": {
+      "signupMessage": "יצירת משתמש חדש",
+      "firstName": "שם פרטי",
+      "lastName": "שם משפחה",
+      "repeatPassword": "חזור על הסיסמה",
+      "acceptTermsOfService": "מאשר תנאי שימוש",
+      "termsOfService": "תנאי שימוש",
+      "register": "הירשם"
     }
   },
   "about": {

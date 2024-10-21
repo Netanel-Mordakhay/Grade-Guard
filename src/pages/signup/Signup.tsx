@@ -1,6 +1,6 @@
 import { Box, Group, Stack } from "@mantine/core";
 import Form from "../signup/Form";
-import Features from "../login/Features";
+import SignupStepper from "./SignupStepper";
 import "../../styles/login.css";
 
 const Signup = () => {
@@ -14,7 +14,7 @@ const Signup = () => {
       <Group className="authenticationContainer">
         <Form />
         <Box visibleFrom="md">
-          <Features />
+          <SignupStepper />
         </Box>
       </Group>
     </Stack>
