@@ -1,3 +1,20 @@
 {
-  "clickme": "click me"
+  "global": {
+    "clickme": "click me",
+    "chooseLanguage": "Language",
+    "english": "English",
+    "hebrew": "עברית"
+  },
+  "home": {
+    "welcome": "Welcome to the home page",
+    "clickme": "Click me"
+  },
+  "about": {
+    "title": "About us",
+    "description": "We are a company..."
+  },
+  "contact": {
+    "phone": "Phone",
+    "email": "Email"
+  }
 }
