@@ -1,5 +1,5 @@
 import { Group, Text } from "@mantine/core";
-import DisplayOptions from "../../components/DisplayOptions";
+import DisplayOptions from "./DisplayOptions";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
