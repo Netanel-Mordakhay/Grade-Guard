@@ -24,6 +24,15 @@
       "feat3desc": "Share your assignments with friends, and make sure everyone is lending a hand",
       "feat4title": "Smart notifications feature",
       "feat4desc": "Don't worry, we'll email you a notification before any important deadline."
+    },
+    "signup": {
+      "signupMessage": "Create your new account",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "repeatPassword": "Repeat Password",
+      "acceptTermsOfService": "Accept Terms of Service",
+      "termsOfService": "Terms of Service",
+      "register": "Register"
     }
   },
   "about": {

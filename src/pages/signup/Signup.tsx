@@ -1,9 +1,9 @@
 import { Box, Group, Stack } from "@mantine/core";
-import Authentication from "./Authentication";
-import Features from "./Features";
+import Form from "../signup/Form";
+import Features from "../login/Features";
 import "../../styles/login.css";
 
-const login = () => {
+const Signup = () => {
   return (
     <Stack
       bg="var(--mantine-color-body)"
@@ -11,8 +11,8 @@ const login = () => {
       justify="center"
       gap="md"
     >
-      <Group>
-        <Authentication />
+      <Group className="authenticationContainer">
+        <Form />
         <Box visibleFrom="md">
           <Features />
         </Box>
@@ -21,4 +21,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Signup;
