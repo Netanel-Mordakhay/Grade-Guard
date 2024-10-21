@@ -52,13 +52,11 @@ const Features = () => {
   ));
 
   return (
-    <Container size={700}>
+    <Container size={350}>
       <Grid>
-        <Grid.Col span={{ base: 12, md: 7 }}>
-          <SimpleGrid cols={{ base: 1, md: 2 }} spacing={30}>
-            {items}
-          </SimpleGrid>
-        </Grid.Col>
+        <SimpleGrid cols={{ base: 1, md: 2 }} spacing={30}>
+          {items}
+        </SimpleGrid>
       </Grid>
     </Container>
   );

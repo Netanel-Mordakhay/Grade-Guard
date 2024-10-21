@@ -1,28 +1,27 @@
-import { Flex, Group } from "@mantine/core";
+import { Box, Flex, Group, Stack } from "@mantine/core";
 import Authentication from "./Authentication";
-import Welcome from "./Welcome";
-import LanguageSelect from "../../components/LanguageSelect";
-//import ColorSelect from "../../components/ColorSelect";
 import Features from "./Features";
+import DisplayOptions from "../../components/DisplayOptions";
 
 const login = () => {
   return (
     <Flex
-      //mih={50}
       h="100svh"
-      //bg="rgba(0, 0, 0, .3)"
-      gap="md"
       justify="center"
       align="center"
       direction="row"
       wrap="wrap"
+      columnGap="100px"
     >
-      <Group>
-        <Authentication />
-        <Features />
-      </Group>
-      <Welcome />
-      <LanguageSelect />
+      <Stack>
+        <Group>
+          <Authentication />
+          <Box visibleFrom="md">
+            <Features />
+          </Box>
+        </Group>
+        <DisplayOptions />
+      </Stack>
     </Flex>
   );
 };
