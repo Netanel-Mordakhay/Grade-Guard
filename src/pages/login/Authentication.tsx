@@ -28,7 +28,7 @@ const Authentication = () => {
 
       <Text c="dimmed" size="md">
         {t("login.createMessage1")}{" "}
-        <Anchor size="md" component="button">
+        <Anchor size="md" component="button" fw={600}>
           {t("login.createAccount")}
         </Anchor>{" "}
         {t("login.createMessage2")}

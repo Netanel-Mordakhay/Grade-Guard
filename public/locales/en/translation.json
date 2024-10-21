@@ -11,11 +11,21 @@
   "login": {
     "loginMessage": "Log in to your account",
     "createMessage1": "Don't have an account?",
-    "createAccount": "Create One",
+    "createAccount": "Create one",
     "createMessage2": "in only a minute.",
     "rememeberMe": "Remember Me",
     "forgotPassword": "Forgot your password?",
-    "signIn": "Sign in"
+    "signIn": "Sign in",
+    "features": {
+      "feat1title": "GradeGuard is free to use",
+      "feat1desc": "Completely free, no subscriptions, just pure value.",
+      "feat2title": "Easy to manage and track",
+      "feat2desc": "Stay on top of things, and never again forget an exam",
+      "feat3title": "Share it with your friends",
+      "feat3desc": "Share your assignments with friends, and make sure everyone is lending a hand",
+      "feat4title": "Smart notifications feature",
+      "feat4desc": "Don't worry, we'll email you a notification before any important deadline."
+    }
   },
   "about": {
     "title": "About us",
