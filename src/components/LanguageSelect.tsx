@@ -28,7 +28,6 @@ const LanguageSelect = () => {
     <Select
       allowDeselect={false}
       leftSection={<GrLanguage />}
-      label={t("global.chooseLanguage")}
       placeholder={
         i18n.language === "he" ? t("global.hebrew") : t("global.english")
       }

@@ -13,13 +13,14 @@ import {
 } from "@mantine/core";
 import Logo from "../../components/Logo";
 import { useTranslation } from "react-i18next";
+import "../../styles/login.css";
 
 const Authentication = () => {
   const { t } = useTranslation();
   const { dir } = useDirection();
 
   return (
-    <Container ta="center" size={420} my={40}>
+    <Container ta="center" size={420} className="authenticationContainer">
       {/* Container header */}
       <Logo />
       <Title fw="200" mb={20}>
@@ -31,7 +32,6 @@ const Authentication = () => {
         <Anchor size="md" component="button" fw={600}>
           {t("login.createAccount")}
         </Anchor>{" "}
-        {t("login.createMessage2")}
       </Text>
 
       {/* Container body */}

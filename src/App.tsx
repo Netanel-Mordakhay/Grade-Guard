@@ -1,16 +1,15 @@
 import "@mantine/core/styles.css";
 import { DirectionProvider, MantineProvider, Stack } from "@mantine/core";
 import { theme } from "./theme";
-import Login from "./pages/login/Login";
-import LanguageSelect from "./components/LanguageSelect";
-import ColorSelect from "./components/ColorSelect";
+
+import LoginPage from "./pages/login/LoginPage";
 
 export default function App() {
   return (
     <DirectionProvider>
       <MantineProvider theme={theme} defaultColorScheme="light">
         <Stack>
-          <Login />
+          <LoginPage />
         </Stack>
       </MantineProvider>
     </DirectionProvider>

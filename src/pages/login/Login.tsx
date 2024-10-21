@@ -1,28 +1,24 @@
-import { Box, Flex, Group, Stack } from "@mantine/core";
+import { Box, Group, Stack } from "@mantine/core";
 import Authentication from "./Authentication";
 import Features from "./Features";
-import DisplayOptions from "../../components/DisplayOptions";
+
+import "../../styles/login.css";
 
 const login = () => {
   return (
-    <Flex
-      h="100svh"
-      justify="center"
+    <Stack
+      bg="var(--mantine-color-body)"
       align="center"
-      direction="row"
-      wrap="wrap"
-      columnGap="100px"
+      justify="center"
+      gap="md"
     >
-      <Stack>
-        <Group>
-          <Authentication />
-          <Box visibleFrom="md">
-            <Features />
-          </Box>
-        </Group>
-        <DisplayOptions />
-      </Stack>
-    </Flex>
+      <Group>
+        <Authentication />
+        <Box visibleFrom="md">
+          <Features />
+        </Box>
+      </Group>
+    </Stack>
   );
 };
 
