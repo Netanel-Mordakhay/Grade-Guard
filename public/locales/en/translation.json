@@ -3,11 +3,19 @@
     "clickme": "click me",
     "chooseLanguage": "Language",
     "english": "English",
-    "hebrew": "עברית"
+    "hebrew": "עברית",
+    "email": "Email",
+    "emailAdress": "Email address",
+    "password": "Password"
   },
-  "home": {
-    "welcome": "Welcome to the home page",
-    "clickme": "Click me"
+  "login": {
+    "loginMessage": "Log in to your account",
+    "createMessage1": "Don't have an account?",
+    "createAccount": "Create One",
+    "createMessage2": "in only a minute.",
+    "rememeberMe": "Remember Me",
+    "forgotPassword": "Forgot your password?",
+    "signIn": "Sign in"
   },
   "about": {
     "title": "About us",

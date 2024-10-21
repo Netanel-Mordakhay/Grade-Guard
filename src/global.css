@@ -1,13 +1,8 @@
-.logo {
-  margin-top: 25vh;
-  position: relative;
-  text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  .logo {
-    margin-top: 10vh;
-  }
+.logoContainer {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* מאפשר מיקום מוחלט של הכובע */
 }
 
 .title {
@@ -15,22 +10,9 @@
   font-weight: 700;
 }
 
-.titleDark {
-  color: #000;
-}
-
-.titleLight {
-  color: #4c9bc8;
-}
-
 .titleHat {
-  position: absolute;
-  left: -2px;
-  top: -14px;
+  position: absolute; /* מיקום מוחלט */
   width: 39px;
-  height: 48px;
-  background-image: url(images/hat.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  top: -15px; /* מיקום מעל האות G */
+  left: 0px; /* התאם את הערך כך שהכובע יהיה ממוקם על ה-G */
 }

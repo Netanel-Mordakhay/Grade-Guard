@@ -9,39 +9,56 @@ import {
   Group,
   Checkbox,
   Button,
+  useDirection,
 } from "@mantine/core";
+import Logo from "../../components/Logo";
+import { useTranslation } from "react-i18next";
 
 const Authentication = () => {
+  const { t } = useTranslation();
+  const { dir } = useDirection();
+
   return (
     <Container ta="center" size={420} my={40}>
       {/* Container header */}
+      <Logo />
       <Title fw="200" mb={20}>
-        Log in to your account
+        {t("login.loginMessage")}
       </Title>
 
       <Text c="dimmed" size="md">
-        Don't have an account?{" "}
+        {t("login.createMessage1")}{" "}
         <Anchor size="md" component="button">
-          Create one
+          {t("login.createAccount")}
         </Anchor>{" "}
-        in only a minute.
+        {t("login.createMessage2")}
       </Text>
 
       {/* Container body */}
-      <Paper withBorder shadow="md" p={30} mt={30} ta="left">
-        <TextInput label="Email" placeholder="Email address" required />
+      <Paper
+        withBorder
+        shadow="md"
+        p={30}
+        mt={30}
+        ta={dir === "rtl" ? "right" : "left"} // Actuall components always stuck to the side without if, don't change
+      >
+        <TextInput
+          label={t("global.email")}
+          placeholder={t("global.emailAdress")}
+          required
+        />
         <PasswordInput
-          label="Password"
-          placeholder="Password"
+          label={t("global.password")}
+          placeholder={t("global.password")}
           required
           mt="md"
         />
         <Group justify="space-between" mt="md">
-          <Checkbox label="Remember me" />
+          <Checkbox label={t("login.rememeberMe")} />
           <Anchor size="sm" component="button">
-            Forgot your password?
+            {t("login.forgotPassword")}
           </Anchor>
-          <Button fullWidth>Sign in</Button>
+          <Button fullWidth>{t("login.signIn")}</Button>
         </Group>
       </Paper>
     </Container>

@@ -1,13 +1,21 @@
 {
   "global": {
-    "clickme": "לחץ עליי",
-    "chooseLanguage": "שפה",
+    "clickme": "click me",
+    "chooseLanguage": "Language",
     "english": "English",
-    "hebrew": "עברית"
+    "hebrew": "עברית",
+    "email": "דואר אלקרטוני",
+    "emailAdress": "כתובת אימייל",
+    "password": "סיסמה"
   },
-  "home": {
-    "welcome": "Welcome to the home page",
-    "clickme": "Click me"
+  "login": {
+    "loginMessage": "התחבר למשתמש שלך",
+    "createMessage1": "עדיין אין לך משתמש?",
+    "createAccount": "צור משתמש",
+    "createMessage2": "בפחות מדקה.",
+    "rememeberMe": "זכור אותי",
+    "forgotPassword": "שכחת את הסיסמה?",
+    "signIn": "התחבר"
   },
   "about": {
     "title": "About us",

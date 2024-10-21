@@ -1,7 +1,12 @@
+import { Stack } from "@mantine/core";
 import Authentication from "./Authentication";
 
 const login = () => {
-  return <Authentication />;
+  return (
+    <Stack>
+      <Authentication />
+    </Stack>
+  );
 };
 
 export default login;
