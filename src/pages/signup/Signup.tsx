@@ -11,7 +11,7 @@ const Signup = () => {
       justify="center"
       gap="md"
     >
-      <Group className="authenticationContainer">
+      <Group className="authenticationContainer animate__animated animate__fadeInDown">
         <Form />
         <Box visibleFrom="md">
           <SignupStepper />

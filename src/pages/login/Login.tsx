@@ -11,7 +11,7 @@ const login = () => {
       justify="center"
       gap="md"
     >
-      <Group>
+      <Group className="animate__animated animate__fadeInDown">
         <Authentication />
         <Box visibleFrom="md">
           <Features />

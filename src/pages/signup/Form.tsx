@@ -42,12 +42,12 @@ const Form = () => {
         <TextInput
           label={t("signup.lastName")}
           placeholder={t("signup.lastName")}
-          required
           mt="md"
         />
         <TextInput
           label={t("global.email")}
           placeholder={t("global.emailAdress")}
+          required
           mt="md"
         />
         <PasswordInput
