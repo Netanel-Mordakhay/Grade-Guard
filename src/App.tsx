@@ -1,11 +1,12 @@
 import "@mantine/core/styles.css";
 import { DirectionProvider, MantineProvider, Stack } from "@mantine/core";
 import { theme } from "./theme";
-import LoginPage from "./pages/LoginPage";
 import "animate.css";
 import "./styles/global.css";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import DashboardPage from "./pages/DashboardPage";
+import LoginPage from "./pages/LoginPage";
 
 export default function App() {
   const { i18n } = useTranslation();
@@ -22,7 +23,7 @@ export default function App() {
     <DirectionProvider>
       <MantineProvider theme={theme} defaultColorScheme="light">
         <Stack>
-          <LoginPage />
+          <DashboardPage />
         </Stack>
       </MantineProvider>
     </DirectionProvider>
