@@ -1,11 +1,12 @@
-import { Group, Text } from "@mantine/core";
+import { Group } from "@mantine/core";
 import DisplayOptions from "../Footer/DisplayOptions";
+import UserButton from "./UserButton";
 
 const Header = () => {
   return (
     <Group justify="space-between" align="center">
-      <Text>asd</Text>
-      <DisplayOptions />
+      <UserButton />
+      <DisplayOptions reverse={true} />
     </Group>
   );
 };

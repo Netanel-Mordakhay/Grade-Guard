@@ -6,7 +6,6 @@ import "./styles/global.css";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import DashboardPage from "./pages/DashboardPage";
-import LoginPage from "./pages/LoginPage";
 
 export default function App() {
   const { i18n } = useTranslation();

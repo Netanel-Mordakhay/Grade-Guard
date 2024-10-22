@@ -1,9 +1,7 @@
 import { useState } from "react";
-import { Group, Code } from "@mantine/core";
+import { Group } from "@mantine/core";
 import classes from "../../styles/navbar.module.css";
 import LogoSmall from "../LogoSmall";
-import ColorSelect from "../ColorSelect";
-import LanguageSelect from "../LanguageSelect";
 import { FaHome, FaQuestion, FaBook } from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
 import { MdAssignmentTurnedIn, MdOutlineExitToApp } from "react-icons/md";

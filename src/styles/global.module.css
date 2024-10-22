@@ -1,0 +1,74 @@
+/* Header */
+.userButton {
+  display: flex;
+  align-items: center;
+  width: auto;
+  padding: var(--mantine-spacing-md);
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-dark-0));
+
+  @mixin hover {
+    background-color: light-dark(
+      var(--mantine-color-gray-0),
+      var(--mantine-color-dark-8)
+    );
+  }
+}
+
+/* Logo */
+.logoContainer {
+  height: 60px;
+  width: 260px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.logoTitle {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.logoTitleBlue {
+  color: var(--mantine-color-blue-6);
+}
+
+.logoHat {
+  position: absolute;
+  width: 39px;
+  top: 0;
+  left: 0;
+  transform: translate(3px, -14px);
+}
+
+/* Logo Small */
+.logoContainerSmall {
+  height: 50px;
+  width: 150px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.logoTitleSmall {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.logoTitleBlueSmall {
+  color: var(--mantine-color-blue-6);
+}
+
+.logoHatSmall {
+  position: absolute;
+  width: 24px;
+  top: 0;
+  left: 0;
+  transform: translate(1px, 3px);
+}
+
+/* Typography */
+.secondaryColor {
+  color: var(--mantine-color-blue-6);
+}

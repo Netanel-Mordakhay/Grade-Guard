@@ -1,7 +1,7 @@
 import { AppShell, Burger } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import Navbar from "../components/navbar/Navbar";
-import Header from "../components/header/Header";
+import Homepage from "../components/homepage/Homepage";
 
 function DashboardLayout() {
   const [opened, { toggle }] = useDisclosure();
@@ -13,14 +13,14 @@ function DashboardLayout() {
         breakpoint: "sm",
         collapsed: { mobile: !opened },
       }}
-      padding="md"
+      padding="sm"
     >
       <AppShell.Navbar>
         <Navbar />
       </AppShell.Navbar>
 
       <AppShell.Main>
-        <Header />
+        <Homepage />
       </AppShell.Main>
     </AppShell>
   );

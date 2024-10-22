@@ -5,7 +5,7 @@ import Copyright from "./Copyright";
 const Footer = () => {
   return (
     <Group justify="space-between" p={10}>
-      <DisplayOptions />
+      <DisplayOptions reverse={false} />
       <Copyright />
     </Group>
   );
