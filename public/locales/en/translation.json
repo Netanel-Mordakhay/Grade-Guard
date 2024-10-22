@@ -36,13 +36,13 @@
     "register": "Register",
     "stepper": {
       "step1": "Step 1",
-      "step1desc": "Find out about GradeGuard",
+      "step1desc": "Finding out about GradeGuard",
       "step2": "Step 2",
       "step2desc": "Creating a new account",
       "step3": "Step 3",
-      "step3desc": "Verify email address",
+      "step3desc": "Verifying email address",
       "step4": "Step 4",
-      "step4desc": "Better your grades!"
+      "step4desc": "Starting to better your grades!"
     }
   },
   "about": {

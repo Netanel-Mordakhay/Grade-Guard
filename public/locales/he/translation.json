@@ -4,12 +4,12 @@
     "chooseLanguage": "Language",
     "english": "English",
     "hebrew": "עברית",
-    "email": "דואר אלקרטוני",
+    "email": "דואר אלקטרוני",
     "emailAdress": "כתובת אימייל",
     "password": "סיסמה"
   },
   "login": {
-    "loginMessage": "התחבר למשתמש שלך",
+    "loginMessage": "התחבר למשתמש",
     "createMessage1": "עדיין אין לך משתמש?",
     "createAccount": "צור משתמש",
     "rememeberMe": "זכור אותי",
@@ -36,11 +36,11 @@
     "register": "הירשם",
     "stepper": {
       "step1": "שלב 1",
-      "step1desc": "לגלות את GradeGuard",
+      "step1desc": "מגלים את GradeGuard",
       "step2": "שלב 2",
-      "step2desc": "יצירת משתמש חדש",
+      "step2desc": "יוצרים משתמש חדש",
       "step3": "שלב 3",
-      "step3desc": "אימות כתובת אימייל",
+      "step3desc": "מאמתים את כתובת האימייל",
       "step4": "שלב 4",
       "step4desc": "מתחילים להשתמש!"
     }
