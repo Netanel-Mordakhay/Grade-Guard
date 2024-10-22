@@ -12,7 +12,6 @@ import {
 } from "@mantine/core";
 import Logo from "../Logo";
 import { useTranslation } from "react-i18next";
-import "../../styles/login.css";
 const Form = () => {
   const { t } = useTranslation();
   const { dir } = useDirection();

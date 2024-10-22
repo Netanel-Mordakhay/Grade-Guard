@@ -19,7 +19,7 @@ const Authentication = () => {
   const { dir } = useDirection();
 
   return (
-    <Container ta="center" size={420} className="authenticationContainer">
+    <Container ta="center" size={420} className="gradientBackground">
       {/* Container header */}
       <Logo />
       <Title fw="200" mb={20}>

@@ -1,3 +1,4 @@
+/* Body */
 @media (min-width: 768px) {
   body {
     background-image: url("../assets/img/student.webp");
@@ -7,7 +8,8 @@
   }
 }
 
-.authenticationContainer {
+/* Effects */
+.gradientBackground {
   background: radial-gradient(
     circle,
     rgba(2, 0, 36, 1) 00%,

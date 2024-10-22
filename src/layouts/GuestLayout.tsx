@@ -1,7 +1,7 @@
 import { Box, Stack } from "@mantine/core";
 import Footer from "../components/Footer/Footer";
 import { ReactNode } from "react";
-import "../styles/login.css";
+import "../styles/guest-layout.css";
 
 interface Props {
   children: ReactNode;
