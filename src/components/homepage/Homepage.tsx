@@ -1,4 +1,3 @@
-import { Stack } from "@mantine/core";
 import GridCards from "./GridCards";
 import Header from "../header/Header";
 

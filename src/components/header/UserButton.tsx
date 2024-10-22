@@ -1,6 +1,6 @@
-import { UnstyledButton, Group, Avatar, Title, Text } from "@mantine/core";
+import { UnstyledButton, Group, Avatar, Text } from "@mantine/core";
 import classes from "../../styles/global.module.css";
-import defaultIcon from "../../assets/img/defaultIcon.webp";
+import defaultIcon from "../../assets/img/defaultAvatar.webp";
 
 const user = {
   name: "Nati Mordakhay",
