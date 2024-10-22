@@ -1,7 +1,6 @@
 import {
   Container,
   Title,
-  Text,
   Paper,
   Anchor,
   TextInput,
@@ -11,27 +10,20 @@ import {
   Button,
   useDirection,
 } from "@mantine/core";
-import Logo from "../../components/Logo";
+import Logo from "../Logo";
 import { useTranslation } from "react-i18next";
-
-const Authentication = () => {
+import "../../styles/login.css";
+const Form = () => {
   const { t } = useTranslation();
   const { dir } = useDirection();
 
   return (
-    <Container ta="center" size={420} className="authenticationContainer">
+    <Container ta="center" size={420}>
       {/* Container header */}
       <Logo />
       <Title fw="200" mb={20}>
-        {t("login.loginMessage")}
+        {t("signup.signupMessage")}
       </Title>
-
-      <Text c="dimmed" size="md">
-        {t("login.createMessage1")}{" "}
-        <Anchor size="md" component="button" fw={600}>
-          {t("login.createAccount")}
-        </Anchor>{" "}
-      </Text>
 
       {/* Container body */}
       <Paper
@@ -42,9 +34,21 @@ const Authentication = () => {
         ta={dir === "rtl" ? "right" : "left"} // Actuall components always stuck to the side without if, don't change
       >
         <TextInput
+          label={t("signup.firstName")}
+          placeholder={t("signup.firstName")}
+          required
+          mt="md"
+        />
+        <TextInput
+          label={t("signup.lastName")}
+          placeholder={t("signup.lastName")}
+          mt="md"
+        />
+        <TextInput
           label={t("global.email")}
           placeholder={t("global.emailAdress")}
           required
+          mt="md"
         />
         <PasswordInput
           label={t("global.password")}
@@ -52,16 +56,22 @@ const Authentication = () => {
           required
           mt="md"
         />
+        <PasswordInput
+          label={t("signup.repeatPassword")}
+          placeholder={t("global.password")}
+          required
+          mt="md"
+        />
         <Group justify="space-between" mt="md">
-          <Checkbox label={t("login.rememeberMe")} />
+          <Checkbox label={t("signup.acceptTermsOfService")} />
           <Anchor size="sm" component="button">
-            {t("login.forgotPassword")}
+            {t("signup.termsOfService")}
           </Anchor>
-          <Button fullWidth>{t("login.signIn")}</Button>
+          <Button fullWidth>{t("signup.register")}</Button>
         </Group>
       </Paper>
     </Container>
   );
 };
 
-export default Authentication;
+export default Form;

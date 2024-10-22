@@ -1,7 +1,7 @@
 import { Box, Stack } from "@mantine/core";
-import Login from "./Login";
-import Footer from "../../components/Footer/Footer";
-import "../../styles/login.css";
+import Login from "../components/login/Login";
+import Footer from "../components/Footer/Footer";
+import "../styles/login.css";
 
 const LoginPage = () => {
   return (
