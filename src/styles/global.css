@@ -1,6 +1,7 @@
 /* Logo */
 .logoContainer {
   height: 60px;
+  width: 260px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -20,5 +21,5 @@
   position: absolute;
   width: 39px;
   top: -14px;
-  left: 0px;
+  left: 3px;
 }

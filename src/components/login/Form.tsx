@@ -9,14 +9,13 @@ import {
   Group,
   Checkbox,
   Button,
-  useDirection,
 } from "@mantine/core";
 import Logo from "../Logo";
 import { useTranslation } from "react-i18next";
 
 const Authentication = () => {
   const { t } = useTranslation();
-  const { dir } = useDirection();
+  const { i18n } = useTranslation();
 
   return (
     <Container ta="center" size={420} className="gradientBackground">
@@ -39,7 +38,7 @@ const Authentication = () => {
         shadow="md"
         p={30}
         mt={30}
-        ta={dir === "rtl" ? "right" : "left"} // Actuall components always stuck to the side without if, don't change
+        ta={i18n.language === "he" ? "right" : "left"} // Actuall components always stuck to the side without if, don't change
       >
         <TextInput
           label={t("global.email")}
