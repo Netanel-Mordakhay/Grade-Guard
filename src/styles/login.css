@@ -1,3 +1,12 @@
+@media (min-width: 768px) {
+  body {
+    background-image: url("../assets/img/student.webp");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+}
+
 .authenticationContainer {
   background: radial-gradient(
     circle,

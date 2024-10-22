@@ -13,7 +13,6 @@ import {
 } from "@mantine/core";
 import Logo from "../../components/Logo";
 import { useTranslation } from "react-i18next";
-import "../../styles/login.css";
 
 const Authentication = () => {
   const { t } = useTranslation();

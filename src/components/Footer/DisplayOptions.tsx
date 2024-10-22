@@ -1,6 +1,6 @@
 import { Group } from "@mantine/core";
-import ColorSelect from "./ColorSelect";
-import LanguageSelect from "./LanguageSelect";
+import ColorSelect from "../ColorSelect";
+import LanguageSelect from "../LanguageSelect";
 
 const DisplayOptions = () => {
   return (

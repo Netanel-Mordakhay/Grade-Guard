@@ -1,18 +1,17 @@
 import { Box, Group, Stack } from "@mantine/core";
-import Authentication from "./Authentication";
+import Form from "./Form";
 import Features from "./Features";
-import "../../styles/login.css";
 
 const login = () => {
   return (
     <Stack
-      bg="var(--mantine-color-body)"
+      //bg="var(--mantine-color-body)"
       align="center"
       justify="center"
       gap="md"
     >
       <Group className="animate__animated animate__fadeInDown">
-        <Authentication />
+        <Form />
         <Box visibleFrom="md">
           <Features />
         </Box>

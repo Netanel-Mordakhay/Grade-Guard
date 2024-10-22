@@ -1,12 +1,11 @@
 import { Box, Group, Stack } from "@mantine/core";
 import Form from "../signup/Form";
 import SignupStepper from "./SignupStepper";
-import "../../styles/login.css";
 
 const Signup = () => {
   return (
     <Stack
-      bg="var(--mantine-color-body)"
+      //bg="var(--mantine-color-body)"
       align="center"
       justify="center"
       gap="md"

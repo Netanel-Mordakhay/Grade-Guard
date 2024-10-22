@@ -4,7 +4,6 @@ import "animate.css";
 import { theme } from "./theme";
 import SignupPage from "./pages/signup/SignupPage";
 import LoginPage from "./pages/login/LoginPage";
-//import LoginPage from "./pages/login/LoginPage";
 
 export default function App() {
   return (
@@ -12,7 +11,6 @@ export default function App() {
       <MantineProvider theme={theme} defaultColorScheme="light">
         <Stack>
           <LoginPage />
-          <SignupPage />
         </Stack>
       </MantineProvider>
     </DirectionProvider>
