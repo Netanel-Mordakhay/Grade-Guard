@@ -4,12 +4,7 @@ import SignupStepper from "./SignupStepper";
 
 const Signup = () => {
   return (
-    <Stack
-      //bg="var(--mantine-color-body)"
-      align="center"
-      justify="center"
-      gap="md"
-    >
+    <Stack align="center" justify="center" gap="md">
       <Group className="gradientBackground animate__animated animate__fadeInDown">
         <Form />
         <Box visibleFrom="md">

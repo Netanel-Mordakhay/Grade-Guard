@@ -1,11 +1,10 @@
 import { useTranslation } from "react-i18next";
-import { Select, useDirection } from "@mantine/core";
+import { Select } from "@mantine/core";
 import { GrLanguage } from "react-icons/gr";
 
 const LanguageSelect = () => {
   const { i18n } = useTranslation();
   const { t } = useTranslation();
-  const { setDirection } = useDirection();
 
   // Available languages
   const languages = [
@@ -16,9 +15,6 @@ const LanguageSelect = () => {
   const changeLanguage = (lng: string | null) => {
     if (lng) {
       i18n.changeLanguage(lng);
-      {
-        lng === "he" ? setDirection("rtl") : setDirection("ltr");
-      }
     }
   };
 
