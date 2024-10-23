@@ -1,10 +1,12 @@
-import { AppShell, Burger } from "@mantine/core";
+import { AppShell } from "@mantine/core";
+//import { AppShell, Burger } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import Navbar from "../components/navbar/Navbar";
 import Homepage from "../components/homepage/Homepage";
 
 function DashboardLayout() {
-  const [opened, { toggle }] = useDisclosure();
+  const [opened] = useDisclosure();
+  //const [opened, { toggle }] = useDisclosure();
   //<Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
   return (
     <AppShell
