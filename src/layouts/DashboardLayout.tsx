@@ -29,7 +29,7 @@ function DashboardLayout({ children }: Props) {
         <Navbar />
       </AppShell.Navbar>
 
-      <AppShell.Main>{children}</AppShell.Main>
+      <AppShell.Main className="studentBackground">{children}</AppShell.Main>
 
       <AppShell.Footer>
         <Footer />

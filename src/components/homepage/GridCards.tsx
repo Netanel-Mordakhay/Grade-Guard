@@ -8,7 +8,6 @@ const GridCards = () => {
       <Stack>
         <UserCard />
         <GradesCard />
-        <UserCard />
       </Stack>
       <UserCard />
       <Stack>
