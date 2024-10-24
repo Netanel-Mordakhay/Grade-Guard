@@ -1,10 +1,13 @@
+import { Stack } from "@mantine/core";
 import GridCards from "./GridCards";
+import Statistics from "./Statistics";
 
 const Homepage = () => {
   return (
-    <div style={{ flex: 1 }}>
+    <Stack>
+      <Statistics />
       <GridCards></GridCards>
-    </div>
+    </Stack>
   );
 };
 

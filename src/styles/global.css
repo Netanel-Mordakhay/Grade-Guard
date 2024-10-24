@@ -24,6 +24,26 @@
   }
 }
 
+/* Homepage */
+.statisticsContainer {
+  background-image: linear-gradient(
+    -60deg,
+    var(--mantine-color-blue-4) 0%,
+    var(--mantine-color-blue-7) 100%
+  );
+}
+
+.statisticsText {
+  color: var(--mantine-color-blue-0);
+  font-size: var(--mantine-font-size-sm);
+  margin-top: rem(5px);
+}
+
+.statisticsIcon {
+  color: var(--mantine-color-white);
+  opacity: 0.8;
+}
+
 /* Logo */
 .logoContainer {
   height: 60px;
@@ -79,6 +99,7 @@
 }
 
 /* Typography */
+
 .secondaryColor {
   color: var(--mantine-color-blue-6);
 }

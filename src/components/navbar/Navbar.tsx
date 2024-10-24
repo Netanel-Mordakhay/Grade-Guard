@@ -5,6 +5,7 @@ import { FaHome, FaQuestion, FaBook } from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
 import { MdAssignmentTurnedIn, MdOutlineExitToApp } from "react-icons/md";
 import { PiNotebookFill } from "react-icons/pi";
+import ReportBug from "./ReportBug";
 
 const data = [
   { link: "", label: "Homepage", icon: FaHome },
@@ -38,6 +39,9 @@ const Navbar = () => {
     <nav className={classes.navbar}>
       <div className={classes.navbarMain}>{links}</div>
 
+      <div className={classes.footer}>
+        <ReportBug />
+      </div>
       <div className={classes.footer}>
         <a
           href="#"
