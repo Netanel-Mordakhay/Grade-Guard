@@ -1,12 +1,22 @@
 import { Group } from "@mantine/core";
-import DisplayOptions from "../Footer/DisplayOptions";
-import UserButton from "./UserButton";
+import LogoSmall from "../LogoSmall";
+import { ReactNode } from "react";
+import UserAvatar from "../UserAvatar";
 
-const Header = () => {
+interface Props {
+  children: ReactNode;
+}
+
+const Header = ({ children }: Props) => {
   return (
-    <Group justify="space-between" align="center">
-      <UserButton />
-      <DisplayOptions reverse={true} />
+    <Group h="100%" px="md" justify="space-between">
+      <Group>
+        {children}
+        <LogoSmall />
+      </Group>
+      <Group>
+        <UserAvatar />
+      </Group>
     </Group>
   );
 };

@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Group } from "@mantine/core";
+
 import classes from "../../styles/navbar.module.css";
-import LogoSmall from "../LogoSmall";
 import { FaHome, FaQuestion, FaBook } from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
 import { MdAssignmentTurnedIn, MdOutlineExitToApp } from "react-icons/md";
@@ -37,12 +36,7 @@ const Navbar = () => {
 
   return (
     <nav className={classes.navbar}>
-      <div className={classes.navbarMain}>
-        <Group className={classes.header} justify="space-between">
-          <LogoSmall />
-        </Group>
-        {links}
-      </div>
+      <div className={classes.navbarMain}>{links}</div>
 
       <div className={classes.footer}>
         <a

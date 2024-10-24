@@ -1,5 +1,4 @@
 import { Avatar, Text, Button } from "@mantine/core";
-import defaultAvatar from "../../assets/img/defaultAvatar.webp";
 import PaperCard from "../PaperCard";
 
 const user = {
@@ -11,7 +10,7 @@ const UserCard = () => {
   return (
     <PaperCard>
       <>
-        <Avatar src={defaultAvatar} size={120} radius={120} mx="auto" />
+        <Avatar size={120} radius={120} mx="auto" />
         <Text ta="center" fz="lg" fw={500} mt="md">
           {user.name}
         </Text>

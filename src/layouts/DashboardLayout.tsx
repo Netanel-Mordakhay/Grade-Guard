@@ -1,29 +1,39 @@
-import { AppShell } from "@mantine/core";
-//import { AppShell, Burger } from "@mantine/core";
+import { AppShell, Burger } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import Navbar from "../components/navbar/Navbar";
-import Homepage from "../components/homepage/Homepage";
+import Footer from "../components/Footer/Footer";
+import Header from "../components/header/Header";
+import { ReactNode } from "react";
 
-function DashboardLayout() {
-  const [opened] = useDisclosure();
-  //const [opened, { toggle }] = useDisclosure();
-  //<Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
+interface Props {
+  children: ReactNode;
+}
+
+function DashboardLayout({ children }: Props) {
+  const [opened, { toggle }] = useDisclosure();
+
   return (
     <AppShell
-      navbar={{
-        width: 300,
-        breakpoint: "sm",
-        collapsed: { mobile: !opened },
-      }}
-      padding="sm"
+      header={{ height: 60 }}
+      navbar={{ width: 300, breakpoint: "sm", collapsed: { mobile: !opened } }}
+      footer={{ height: 60 }}
+      padding="md"
     >
+      <AppShell.Header>
+        <Header>
+          <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
+        </Header>
+      </AppShell.Header>
+
       <AppShell.Navbar>
         <Navbar />
       </AppShell.Navbar>
 
-      <AppShell.Main>
-        <Homepage />
-      </AppShell.Main>
+      <AppShell.Main>{children}</AppShell.Main>
+
+      <AppShell.Footer>
+        <Footer />
+      </AppShell.Footer>
     </AppShell>
   );
 }

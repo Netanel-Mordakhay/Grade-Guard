@@ -1,19 +1,9 @@
 /* Body */
 @media (min-width: 768px) {
-  body {
+  .studentBackground {
     background-image: url("../assets/img/student.webp");
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: auto;
   }
-}
-
-/* Effects */
-.gradientBackground {
-  background: radial-gradient(
-    circle,
-    rgba(2, 0, 36, 1) 00%,
-    rgba(0, 212, 255, 0.3) 0%,
-    rgba(9, 9, 121, 0) 50%
-  );
 }

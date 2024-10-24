@@ -5,7 +5,7 @@ const child = <Skeleton height={"30vh"} radius="md" animate={false} />;
 
 const GridCards = () => {
   return (
-    <Grid p="md">
+    <Grid>
       <Grid.Col span={{ base: 12, xs: 4 }}>
         <UserCard />
       </Grid.Col>
