@@ -1,3 +1,13 @@
+/* Body */
+@media (min-width: 768px) {
+  .studentBackground {
+    background-image: url("../assets/img/student.webp");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+}
+
 /* Header */
 .userButton {
   display: flex;

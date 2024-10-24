@@ -1,5 +1,5 @@
 import { Avatar, Text, Button } from "@mantine/core";
-import PaperCard from "../PaperCard";
+import InfoCard from "../InfoCard";
 
 const user = {
   name: "Nati Mordakhay",
@@ -8,7 +8,7 @@ const user = {
 
 const UserCard = () => {
   return (
-    <PaperCard>
+    <InfoCard title={"Profile"}>
       <>
         <Avatar size={120} radius={120} mx="auto" />
         <Text ta="center" fz="lg" fw={500} mt="md">
@@ -18,11 +18,11 @@ const UserCard = () => {
           {user.email}
         </Text>
 
-        <Button variant="default" fullWidth mt="md">
+        <Button variant="filled" fullWidth mt="md">
           View Profile
         </Button>
       </>
-    </PaperCard>
+    </InfoCard>
   );
 };
 
