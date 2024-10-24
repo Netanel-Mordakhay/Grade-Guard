@@ -1,6 +1,11 @@
 import { Group, Paper, SimpleGrid, Text } from "@mantine/core";
 import { Gi3dMeeple } from "react-icons/gi";
-import { FaFlagCheckered, FaCheck, FaTrophy } from "react-icons/fa6";
+import {
+  FaFlagCheckered,
+  FaCheck,
+  FaTrophy,
+  FaQuestion,
+} from "react-icons/fa6";
 
 const icons = {
   user: Gi3dMeeple,
@@ -10,13 +15,34 @@ const icons = {
   exam: FaFlagCheckered,
   assignment: FaCheck,
   trophy: FaTrophy,
+  trivia: FaQuestion,
 };
 
 const data = [
-  { title: "My Next Exam", icon: "exam", value: "13,456" },
-  { title: "My Next Assignment", icon: "assignment", value: "4,145" },
-  { title: "Study Clock Record", icon: "trophy", value: "745" },
-  { title: "New customers", icon: "user", value: "188" },
+  {
+    title: "My Next Exam",
+    icon: "exam",
+    value: "9999",
+    desc: "Better start studying",
+  },
+  {
+    title: "My Next Assignment",
+    icon: "assignment",
+    value: "9999",
+    desc: "How about we check another one?",
+  },
+  {
+    title: "Study Clock Record",
+    icon: "trophy",
+    value: "9999",
+    desc: "Your alltime record",
+  },
+  {
+    title: "My Trivia",
+    icon: "trivia",
+    value: "9999",
+    desc: "Total amount",
+  },
 ] as const;
 
 const Statistics = () => {
@@ -41,7 +67,7 @@ const Statistics = () => {
         </Group>
 
         <Text fz="xs" mt={7}>
-          Compared to previous month
+          {stat.desc}
         </Text>
       </Paper>
     );
