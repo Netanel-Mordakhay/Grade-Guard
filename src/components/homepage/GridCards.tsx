@@ -1,6 +1,7 @@
 import { SimpleGrid, Stack } from "@mantine/core";
 import UserCard from "./UserCard";
 import GradesCard from "./GradesCard";
+import TodoLite from "./TodoLite";
 
 const GridCards = () => {
   return (
@@ -9,9 +10,14 @@ const GridCards = () => {
         <UserCard />
         <GradesCard />
       </Stack>
-      <UserCard />
+
       <Stack>
         <UserCard />
+        <TodoLite />
+      </Stack>
+
+      <Stack>
+        <TodoLite />
       </Stack>
     </SimpleGrid>
   );

@@ -44,6 +44,11 @@
   opacity: 0.6;
 }
 
+/* Todo */
+.rowSelected {
+  background-color: var(--mantine-color-blue-light);
+}
+
 /* Logo */
 .logoContainer {
   height: 60px;
