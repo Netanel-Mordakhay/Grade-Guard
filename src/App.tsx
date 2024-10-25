@@ -22,7 +22,7 @@ export default function App() {
   return (
     <DirectionProvider>
       <MantineProvider theme={theme} defaultColorScheme="light">
-        <Stack>
+        <Stack className="gradientBackgroundBody">
           <DashboardPage />
         </Stack>
       </MantineProvider>
