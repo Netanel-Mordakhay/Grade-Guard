@@ -1,26 +1,32 @@
 import { AreaChart } from "@mantine/charts";
 import InfoCard from "../InfoCard";
+import { Button } from "@mantine/core";
 
 export const data = [
   {
     date: "Sem. A",
-    Average: 70.3,
+    "Semester Average": 70.3,
+    "Total Average": 70.3,
   },
   {
     date: "Sem. B",
-    Average: 77.5,
+    "Semester Average": 77.5,
+    "Total Average": 73.9,
   },
   {
     date: "Sem. C",
-    Average: 75.5,
+    "Semester Average": 75.5,
+    "Total Average": 74.4,
   },
   {
     date: "Sem. D",
-    Average: 92.3,
+    "Semester Average": 92.3,
+    "Total Average": 78.9,
   },
   {
     date: "Sem. E",
-    Average: 77.5,
+    "Semester Average": 77.5,
+    "Total Average": 78.6,
   },
 ];
 
@@ -31,10 +37,18 @@ const AvgGradeChart = () => {
         h={300}
         data={data}
         dataKey="date"
-        series={[{ name: "Average", color: "indigo.6" }]}
+        series={[
+          { name: "Semester Average", color: "indigo.6" },
+          { name: "Total Average", color: "teal.6" },
+        ]}
         curveType="linear"
         tickLine="x"
+        withLegend
+        legendProps={{ verticalAlign: "top", height: 50 }}
       />
+      <Button variant="filled" fullWidth mt="md">
+        Anticipate My Grade
+      </Button>
     </InfoCard>
   );
 };
