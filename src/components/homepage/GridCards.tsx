@@ -3,6 +3,7 @@ import UserCard from "./UserCard";
 import GradesCard from "./GradesCard";
 import TodoLite from "./TodoLite";
 import Tips from "./Tips";
+import AvgGradeChart from "./AvgGradeChart";
 
 const GridCards = () => {
   return (
@@ -13,11 +14,12 @@ const GridCards = () => {
       </Stack>
 
       <Stack>
-        <UserCard />
-        <TodoLite />
+        <AvgGradeChart />
+        <AvgGradeChart />
       </Stack>
 
       <Stack>
+        <TodoLite />
         <Tips />
       </Stack>
     </SimpleGrid>
