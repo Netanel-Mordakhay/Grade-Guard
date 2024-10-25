@@ -22,7 +22,7 @@ const TodoLite = () => {
     setAssignments(updatedAssignments);
   };
 
-  const rows = assignments.slice(0, 3).map((assignment, index) => (
+  const rows = assignments.slice(0, 5).map((assignment, index) => (
     <Table.Tr key={assignment.id}>
       <Table.Td>
         <Checkbox

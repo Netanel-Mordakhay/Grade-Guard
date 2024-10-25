@@ -46,9 +46,6 @@ const AvgGradeChart = () => {
         withLegend
         legendProps={{ verticalAlign: "top", height: 50 }}
       />
-      <Button variant="filled" fullWidth mt="md">
-        Anticipate My Grade
-      </Button>
     </InfoCard>
   );
 };
