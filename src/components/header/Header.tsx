@@ -9,7 +9,7 @@ interface Props {
 
 const Header = ({ children }: Props) => {
   return (
-    <Group h="100%" px="md" justify="space-between">
+    <Group h="100%" px="md" justify="space-between" dir="ltr">
       <Group>
         {children}
         <LogoSmall />
