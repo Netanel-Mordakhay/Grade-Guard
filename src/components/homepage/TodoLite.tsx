@@ -41,7 +41,7 @@ const TodoLite = () => {
         <Table striped highlightOnHover withRowBorders={false}>
           <Table.Thead>
             <Table.Tr>
-              <Table.Th>Status</Table.Th>
+              <Table.Th w={20} />
               <Table.Th>Assignment</Table.Th>
             </Table.Tr>
           </Table.Thead>

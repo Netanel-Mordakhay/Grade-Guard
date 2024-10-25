@@ -1,6 +1,5 @@
 import { AreaChart } from "@mantine/charts";
 import InfoCard from "../InfoCard";
-import { Button } from "@mantine/core";
 
 export const data = [
   {
