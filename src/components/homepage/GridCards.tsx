@@ -4,6 +4,7 @@ import GradesCard from "./GradesCard";
 import TodoLite from "./TodoLite";
 import Tips from "./Tips";
 import AvgGradeChart from "./AvgGradeChart";
+import QuickActions from "./QuickActions";
 
 const GridCards = () => {
   return (
@@ -11,15 +12,16 @@ const GridCards = () => {
       <Stack>
         <UserCard />
         <GradesCard />
+        <GradesCard />
       </Stack>
 
       <Stack>
         <AvgGradeChart />
-        <AvgGradeChart />
-      </Stack>
-
-      <Stack>
         <TodoLite />
+      </Stack>
+
+      <Stack>
+        <QuickActions />
         <Tips />
       </Stack>
     </SimpleGrid>
