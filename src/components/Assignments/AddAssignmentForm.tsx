@@ -1,10 +1,4 @@
-import {
-  Button,
-  Group,
-  MultiSelect,
-  NativeSelect,
-  TextInput,
-} from "@mantine/core";
+import { Button, MultiSelect, NativeSelect, TextInput } from "@mantine/core";
 import InfoCard from "../InfoCard";
 import { DateInput } from "@mantine/dates";
 import { useState } from "react";
