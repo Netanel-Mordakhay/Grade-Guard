@@ -8,7 +8,7 @@ import QuickActions from "./QuickActions";
 
 const GridCards = () => {
   return (
-    <SimpleGrid cols={{ base: 1, xs: 3 }}>
+    <SimpleGrid cols={{ base: 1, xs: 2, md: 3 }}>
       <Stack>
         <UserCard />
         <GradesCard />

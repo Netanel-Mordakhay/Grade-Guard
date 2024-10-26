@@ -13,7 +13,7 @@ const Homepage = () => {
   // Placeholders, will be replaced later with API
   useEffect(() => {
     setTimeout(() => setLoadingGrid(false), 500);
-    setTimeout(() => setLoadingStats(false), 1000);
+    setTimeout(() => setLoadingStats(false), 500);
   }, []);
 
   const allLoaded = !loadingGrid && !loadingStats;
