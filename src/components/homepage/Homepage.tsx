@@ -12,8 +12,8 @@ const Homepage = () => {
 
   // Placeholders, will be replaced later with API
   useEffect(() => {
-    setTimeout(() => setLoadingGrid(false), 500); // דמיין טעינה עבור GridCards
-    setTimeout(() => setLoadingStats(false), 1000); // דמיין טעינה עבור Statistics
+    setTimeout(() => setLoadingGrid(false), 500);
+    setTimeout(() => setLoadingStats(false), 1000);
   }, []);
 
   const allLoaded = !loadingGrid && !loadingStats;
