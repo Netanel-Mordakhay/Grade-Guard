@@ -135,6 +135,8 @@
   color: var(--mantine-color-blue-6);
 }
 
+/* Button */
+
 /* Effects */
 .gradientBackground {
   background: radial-gradient(

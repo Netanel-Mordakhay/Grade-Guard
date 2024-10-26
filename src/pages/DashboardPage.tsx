@@ -2,6 +2,7 @@ import { useState } from "react";
 import Homepage from "../components/homepage/Homepage";
 import DashboardLayout from "../layouts/DashboardLayout";
 import Courses from "../components/courses/Courses";
+import Exams from "../components/exams/Exams";
 
 const DashboardPage = () => {
   const [currentPage, setCurrentPage] = useState("Homepage");
@@ -11,6 +12,8 @@ const DashboardPage = () => {
     switch (currentPage) {
       case "Courses":
         return <Courses />;
+      case "Exams":
+        return <Exams />;
       case "Homepage":
       default:
         return <Homepage />;
