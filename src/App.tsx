@@ -4,6 +4,7 @@ import { theme } from "./theme";
 import "animate.css";
 import "./styles/global.css";
 import "@mantine/charts/styles.css";
+import "@mantine/dates/styles.css";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import DashboardPage from "./pages/DashboardPage";

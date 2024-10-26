@@ -11,7 +11,7 @@ const data = [
   { label: "Homepage", icon: FaHome },
   { label: "Courses", icon: FaBook },
   { label: "Exams", icon: PiNotebookFill },
-  { label: "To do", icon: MdAssignmentTurnedIn },
+  { label: "Assignments", icon: MdAssignmentTurnedIn },
   { label: "Messages", icon: FaMessage },
   { label: "Trivia", icon: FaQuestion },
 ];

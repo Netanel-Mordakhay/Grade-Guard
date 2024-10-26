@@ -3,6 +3,7 @@ import Homepage from "../components/homepage/Homepage";
 import DashboardLayout from "../layouts/DashboardLayout";
 import Courses from "../components/courses/Courses";
 import Exams from "../components/exams/Exams";
+import Assignments from "../components/Assignments/Assignments";
 
 const DashboardPage = () => {
   const [currentPage, setCurrentPage] = useState("Homepage");
@@ -14,6 +15,8 @@ const DashboardPage = () => {
         return <Courses />;
       case "Exams":
         return <Exams />;
+      case "Assignments":
+        return <Assignments />;
       case "Homepage":
       default:
         return <Homepage />;

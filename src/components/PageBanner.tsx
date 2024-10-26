@@ -9,6 +9,7 @@ const PageBanner = ({ title }: Props) => {
     <Paper
       withBorder
       p="md"
+      mb="md"
       radius="md"
       className="statisticsContainer statisticsText"
     >
