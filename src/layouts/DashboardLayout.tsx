@@ -19,6 +19,7 @@ function DashboardLayout({ children, setCurrentPage }: Props) {
       navbar={{ width: 300, breakpoint: "sm", collapsed: { mobile: !opened } }}
       footer={{ height: 60 }}
       padding="md"
+      transitionDuration={0}
     >
       <AppShell.Header>
         <Header>

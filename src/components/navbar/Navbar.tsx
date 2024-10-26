@@ -8,12 +8,12 @@ import { PiNotebookFill } from "react-icons/pi";
 import ReportBug from "./ReportBug";
 
 const data = [
-  { link: "", label: "Homepage", icon: FaHome },
-  { link: "", label: "Courses", icon: FaBook },
-  { link: "", label: "Exams", icon: PiNotebookFill },
-  { link: "", label: "To do", icon: MdAssignmentTurnedIn },
-  { link: "", label: "Messages", icon: FaMessage },
-  { link: "", label: "Trivia", icon: FaQuestion },
+  { label: "Homepage", icon: FaHome },
+  { label: "Courses", icon: FaBook },
+  { label: "Exams", icon: PiNotebookFill },
+  { label: "To do", icon: MdAssignmentTurnedIn },
+  { label: "Messages", icon: FaMessage },
+  { label: "Trivia", icon: FaQuestion },
 ];
 
 interface Props {
@@ -27,7 +27,7 @@ const Navbar = ({ setCurrentPage }: Props) => {
     <a
       className={classes.link}
       data-active={item.label === active || undefined}
-      href={item.link}
+      href="#"
       key={item.label}
       onClick={(event) => {
         event.preventDefault();

@@ -19,7 +19,9 @@ const DashboardPage = () => {
 
   return (
     <DashboardLayout setCurrentPage={setCurrentPage}>
-      {renderPage()}
+      <div className="animate__animated animate__fadeIn" key={currentPage}>
+        {renderPage()}
+      </div>
     </DashboardLayout>
   );
 };
