@@ -7,9 +7,10 @@ import { ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
+  setCurrentPage: (page: string) => void;
 }
 
-function DashboardLayout({ children }: Props) {
+function DashboardLayout({ children, setCurrentPage }: Props) {
   const [opened, { toggle }] = useDisclosure();
 
   return (
@@ -26,7 +27,7 @@ function DashboardLayout({ children }: Props) {
       </AppShell.Header>
 
       <AppShell.Navbar>
-        <Navbar />
+        <Navbar setCurrentPage={setCurrentPage} />
       </AppShell.Navbar>
 
       <AppShell.Main className="studentBackground">{children}</AppShell.Main>

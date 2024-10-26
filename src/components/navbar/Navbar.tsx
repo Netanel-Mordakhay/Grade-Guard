@@ -16,7 +16,11 @@ const data = [
   { link: "", label: "Trivia", icon: FaQuestion },
 ];
 
-const Navbar = () => {
+interface Props {
+  setCurrentPage: (page: string) => void; // Defines current page
+}
+
+const Navbar = ({ setCurrentPage }: Props) => {
   const [active, setActive] = useState("Homepage");
 
   const links = data.map((item) => (
@@ -28,6 +32,7 @@ const Navbar = () => {
       onClick={(event) => {
         event.preventDefault();
         setActive(item.label);
+        setCurrentPage(item.label);
       }}
     >
       <item.icon className={classes.linkIcon} />
