@@ -20,7 +20,7 @@ const GradesCard = () => {
               </Text>
             }
           />
-          <List>
+          <List center spacing={5}>
             <List.Item>Average grade: {Grades.average}</List.Item>
             <List.Item>Total courses: {Grades.totalCourses}</List.Item>
             <List.Item>Total credit points: {Grades.totalCredit}</List.Item>
