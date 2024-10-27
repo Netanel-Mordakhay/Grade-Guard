@@ -2,6 +2,7 @@ import { Button, MultiSelect, NativeSelect, TextInput } from "@mantine/core";
 import InfoCard from "../InfoCard";
 import { DateInput } from "@mantine/dates";
 import { useState } from "react";
+import { courses, friends } from "../../constants";
 
 const AddAssignmentForm = () => {
   const [dateValue, setDateValue] = useState<Date | null>(null);
@@ -20,19 +21,10 @@ const AddAssignmentForm = () => {
         placeholder="Due date"
         mt="md"
       />
-      <NativeSelect
-        label="Input label"
-        data={[
-          "Not Assigned",
-          "Quantom Physics",
-          "Data Structures",
-          "History 101",
-        ]}
-        mt="md"
-      />
+      <NativeSelect label="Input label" data={courses} mt="md" />
       <MultiSelect
         label="Share assignment with friends"
-        data={["Eli Elkhazov", "עומר כחלון", "Johhnny Barda"]}
+        data={friends.map((friend) => friend.name)}
         nothingFoundMessage="None found"
         searchable
         mt="md"
