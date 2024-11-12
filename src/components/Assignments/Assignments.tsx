@@ -1,11 +1,9 @@
-import { Grid } from "@mantine/core";
-import InfoCard from "../InfoCard";
-import PageBanner from "../PageBanner";
 import AddAssignmentForm from "./AddAssignmentForm";
 import AssignmentsList from "./AssignmentsList";
 import { useState } from "react";
 import { Assignment } from "../../types";
 import { initialAssignments } from "../../constants";
+import InDashboardBasicLayout from "../../layouts/InDashboardBasicLayout";
 
 const Assignments = () => {
   const [assignments, setAssignments] =
@@ -16,19 +14,10 @@ const Assignments = () => {
   };
 
   return (
-    <>
-      <PageBanner title="Assignments"></PageBanner>
-      <Grid>
-        <Grid.Col span={{ base: 12, xs: 8 }}>
-          <InfoCard title="Assignments">
-            <AssignmentsList assignments={assignments} />
-          </InfoCard>
-        </Grid.Col>
-        <Grid.Col span={{ base: 12, xs: 4 }}>
-          <AddAssignmentForm addAssignment={addAssignment} />
-        </Grid.Col>
-      </Grid>
-    </>
+    <InDashboardBasicLayout title="Assignments">
+      <AssignmentsList assignments={assignments} />
+      <AddAssignmentForm addAssignment={addAssignment} />
+    </InDashboardBasicLayout>
   );
 };
 
