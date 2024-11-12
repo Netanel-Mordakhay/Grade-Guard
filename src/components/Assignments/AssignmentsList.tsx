@@ -1,11 +1,15 @@
 import { Table, Stack, Select, ActionIcon, Group } from "@mantine/core";
 import { MdDelete } from "react-icons/md";
 import { useState } from "react";
-import { initialAssignments, statusData } from "../../constants";
+import { statusData } from "../../constants";
 import AssignmentFilter from "./AssignmentFilter";
+import { Assignment } from "../../types";
 
-const AssignmentsList = () => {
-  const [assignments, setAssignments] = useState(initialAssignments);
+interface Props {
+  assignments: Assignment[];
+}
+
+const AssignmentsList = ({ assignments }: Props) => {
   const [currentCourse, setCurrentCourse] = useState("All");
   const [currentStatus, setCurrentStatus] = useState("In Progress");
 

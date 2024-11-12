@@ -1,17 +1,43 @@
-import { Button, MultiSelect, NativeSelect, TextInput } from "@mantine/core";
+import { Button, NativeSelect, TextInput } from "@mantine/core";
 import InfoCard from "../InfoCard";
 import { DateInput } from "@mantine/dates";
 import { useState } from "react";
-import { courses, friends } from "../../constants";
+import { courses } from "../../constants";
+import { Assignment } from "../../types";
 
-const AddAssignmentForm = () => {
+interface Props {
+  addAssignment: (newAssignment: Assignment) => void;
+}
+
+const AddAssignmentForm = ({ addAssignment }: Props) => {
+  const [assignmentName, setAssignmentName] = useState("");
   const [dateValue, setDateValue] = useState<Date | null>(null);
+  const [selectedCourse, setSelectedCourse] = useState("");
+
+  const handleAddAssignment = () => {
+    if (!assignmentName) return;
+
+    const newAssignment: Assignment = {
+      id: Date.now(),
+      name: assignmentName,
+      course: selectedCourse || "Not Assigned",
+      status: "In Progress",
+      date: dateValue || undefined,
+    };
+
+    addAssignment(newAssignment);
+    setAssignmentName("");
+    setDateValue(null);
+    setSelectedCourse("");
+  };
 
   return (
     <InfoCard title="Add A New Assignment">
       <TextInput
         label="Assignment name"
         placeholder="Assignment name"
+        value={assignmentName}
+        onChange={(e) => setAssignmentName(e.currentTarget.value)}
         required
       />
       <DateInput
@@ -21,15 +47,14 @@ const AddAssignmentForm = () => {
         placeholder="Due date"
         mt="md"
       />
-      <NativeSelect label="Input label" data={courses} mt="md" />
-      <MultiSelect
-        label="Share assignment with friends"
-        data={friends.map((friend) => friend.name)}
-        nothingFoundMessage="None found"
-        searchable
+      <NativeSelect
+        label="Course"
+        data={courses}
+        value={selectedCourse}
+        onChange={(e) => setSelectedCourse(e.currentTarget.value)}
         mt="md"
       />
-      <Button fullWidth mt="md">
+      <Button fullWidth mt="md" onClick={handleAddAssignment}>
         Add
       </Button>
     </InfoCard>
