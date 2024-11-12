@@ -1,13 +1,11 @@
-import { Stack } from "@mantine/core";
-import InfoCard from "../InfoCard";
-import PageBanner from "../PageBanner";
+import InDashboardBasicLayout from "../../layouts/InDashboardBasicLayout";
 
 const Exams = () => {
   return (
-    <Stack justify="center">
-      <PageBanner title="Exams"></PageBanner>
-      <InfoCard title="Exams">text</InfoCard>
-    </Stack>
+    <InDashboardBasicLayout title="Exams">
+      <div>div1</div>
+      <div>div2</div>
+    </InDashboardBasicLayout>
   );
 };
 
