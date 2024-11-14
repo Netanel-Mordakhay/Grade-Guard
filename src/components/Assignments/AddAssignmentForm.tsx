@@ -32,7 +32,7 @@ const AddAssignmentForm = ({ addAssignment }: Props) => {
   };
 
   return (
-    <InfoCard title="Add A New Assignment">
+    <>
       <TextInput
         label="Assignment name"
         placeholder="Assignment name"
@@ -57,7 +57,7 @@ const AddAssignmentForm = ({ addAssignment }: Props) => {
       <Button fullWidth mt="md" onClick={handleAddAssignment}>
         Add
       </Button>
-    </InfoCard>
+    </>
   );
 };
 

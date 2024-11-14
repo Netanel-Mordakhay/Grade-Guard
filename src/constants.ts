@@ -6,6 +6,51 @@ export const courses = [
   "History 101",
 ];
 
+export const initialCourses = [
+  {
+    id: 1,
+    name: "Introduction to Computer Science in Python",
+    semester: 1,
+    credits: 5,
+    grade: 80,
+  },
+  {
+    id: 2,
+    name: "Data Structures",
+    semester: 2,
+    credits: 5,
+    grade: 83,
+  },
+  {
+    id: 3,
+    name: "Databases",
+    semester: 3,
+    credits: 3.5,
+    grade: 79,
+  },
+  {
+    id: 4,
+    name: "Advanced Topics In Programming",
+    semester: 4,
+    credits: 2,
+    grade: 82,
+  },
+  {
+    id: 5,
+    name: "Machine Learning",
+    semester: 5,
+    credits: 5,
+    grade: 78,
+  },
+  {
+    id: 6,
+    name: "introduction to AI",
+    semester: 6,
+    credits: 3.5,
+    grade: 80,
+  },
+];
+
 export const friends = [
   { id: 1, name: "Eli Elkhazov" },
   { id: 1, name: "עומר כחלון" },
