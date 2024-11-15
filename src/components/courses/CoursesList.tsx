@@ -1,8 +1,12 @@
 import { Stack, Table } from "@mantine/core";
-import { initialCourses } from "../../constants";
+import { Course } from "../../types";
 
-const CoursesList = () => {
-  const filteredCourses = initialCourses;
+interface Props {
+  courses: Course[];
+}
+
+const CoursesList = ({ courses }: Props) => {
+  const filteredCourses = courses;
 
   const rows = filteredCourses.map((course) => (
     <Table.Tr key={course.id}>
