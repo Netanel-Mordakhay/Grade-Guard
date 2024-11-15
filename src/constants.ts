@@ -44,7 +44,7 @@ export const initialCourses = [
   },
   {
     id: 6,
-    name: "introduction to AI",
+    name: "Introduction to AI",
     semester: 6,
     credits: 3.5,
     grade: 80,

@@ -1,10 +1,17 @@
+import { Stack } from "@mantine/core";
 import InDashboardBasicLayout from "../../layouts/InDashboardBasicLayout";
+import ExamFilter from "./ExamFilter";
+import ExamsList from "./ExamsList";
+import AddExamForm from "./AddExamForm";
 
 const Exams = () => {
   return (
     <InDashboardBasicLayout title="Exams">
-      <div>div1</div>
-      <div>div2</div>
+      <Stack>
+        <ExamFilter />
+        <ExamsList />
+      </Stack>
+      <AddExamForm />
     </InDashboardBasicLayout>
   );
 };

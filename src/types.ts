@@ -13,3 +13,9 @@ export interface Assignment {
   status: string;
   date?: Date | null;
 }
+
+export interface Exam {
+  id: number;
+  session: string;
+  course: Course;
+}

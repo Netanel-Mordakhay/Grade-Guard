@@ -1,5 +1,6 @@
-import { Stack, Table } from "@mantine/core";
+import { ActionIcon, Stack, Table } from "@mantine/core";
 import { Course } from "../../types";
+import { MdDelete } from "react-icons/md";
 
 interface Props {
   courses: Course[];
@@ -14,6 +15,11 @@ const CoursesList = ({ courses }: Props) => {
       <Table.Td visibleFrom="md">{course.semester}</Table.Td>
       <Table.Td visibleFrom="md">{course.credits}</Table.Td>
       <Table.Td visibleFrom="md">{course.grade}</Table.Td>
+      <Table.Td align="center">
+        <ActionIcon>
+          <MdDelete />
+        </ActionIcon>
+      </Table.Td>
     </Table.Tr>
   ));
 

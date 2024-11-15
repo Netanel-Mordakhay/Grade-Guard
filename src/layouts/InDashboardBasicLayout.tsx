@@ -18,7 +18,9 @@ const InDashboardBasicLayout = ({ title, children }: Props) => {
         <Grid.Col span={{ base: 12, xs: 8 }}>
           <InfoCard title="Assignments">{child1}</InfoCard>
         </Grid.Col>
-        <Grid.Col span={{ base: 12, xs: 4 }}>{child2}</Grid.Col>
+        <Grid.Col span={{ base: 12, xs: 4 }}>
+          <InfoCard title="Assignments">{child2}</InfoCard>
+        </Grid.Col>
       </Grid>
     </>
   );
